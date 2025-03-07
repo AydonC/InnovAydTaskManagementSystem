@@ -1,0 +1,170 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Buy groceries",
+      "list": "Personal",
+      "desc": "Essential items for the week",
+      "isImportant": false,
+      "isCompleted": false,
+      "dueDate": "2025-01-16",
+      "subtasks": [
+        {
+          "id": 1,
+          "name": "Buy milk",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "name": "Buy eggs",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Complete React project",
+      "list": "Work",
+      "desc": "Finalizing the current React task for submission",
+      "isImportant": true,
+      "isCompleted": false,
+      "dueDate": "2025-01-17",
+      "subtasks": []
+    },
+    {
+      "id": 3,
+      "name": "Attend team meeting",
+      "list": "Work",
+      "desc": "Discuss project progress with the team",
+      "isImportant": false,
+      "isCompleted": false,
+      "dueDate": "2025-01-18",
+      "subtasks": [
+        {
+          "id": 1,
+          "name": "Prepare presentation",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Read a book",
+      "list": "Personal",
+      "desc": "Relax and enjoy some personal reading",
+      "isImportant": false,
+      "isCompleted": true,
+      "dueDate": "2025-01-14",
+      "subtasks": []
+    },
+    {
+      "id": 5,
+      "name": "Write blog post",
+      "list": "Work",
+      "desc": "Share insights from recent work experience",
+      "isImportant": true,
+      "isCompleted": false,
+      "dueDate": "2025-01-20",
+      "subtasks": []
+    },
+    {
+      "id": 6,
+      "name": "Plan vacation",
+      "list": "Personal",
+      "desc": "Research and book a relaxing getaway",
+      "isImportant": false,
+      "isCompleted": false,
+      "dueDate": "2025-02-01",
+      "subtasks": [
+        {
+          "id": 1,
+          "name": "Research destinations",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "name": "Book flights",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Project code review",
+      "list": "Work",
+      "desc": "Review code and ensure quality standards are met",
+      "isImportant": true,
+      "isCompleted": false,
+      "dueDate": "2025-01-25",
+      "subtasks": []
+    },
+    {
+      "id": 8,
+      "name": "Organize desk",
+      "list": "Personal",
+      "desc": "Tidy up workspace for better productivity",
+      "isImportant": false,
+      "isCompleted": true,
+      "dueDate": "2025-01-10",
+      "subtasks": []
+    },
+    {
+      "id": 9,
+      "name": "Submit assignment",
+      "list": "Work",
+      "desc": "Complete and submit the assignment on time",
+      "isImportant": false,
+      "isCompleted": false,
+      "dueDate": "2025-01-19",
+      "subtasks": []
+    },
+    {
+      "id": 10,
+      "name": "Clean the house",
+      "list": "Personal",
+      "desc": "Complete household chores for a clean living space",
+      "isImportant": false,
+      "isCompleted": false,
+      "dueDate": "2025-01-20",
+      "subtasks": [
+        {
+          "id": 1,
+          "name": "Vacuum the living room",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "name": "Wash dishes",
+          "completed": false
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "name": "My Day",
+      "icon": "☀️"
+    },
+    {
+      "id": 2,
+      "name": "Important",
+      "icon": "⭐"
+    },
+    {
+      "id": 3,
+      "name": "Assigned To Me",
+      "icon": "👤"
+    },
+    {
+      "id": 4,
+      "name": "Planned",
+      "icon": "📅"
+    },
+    {
+      "id": 5,
+      "name": "Tasks",
+      "icon": "✅"
+    }
+  ]
+}

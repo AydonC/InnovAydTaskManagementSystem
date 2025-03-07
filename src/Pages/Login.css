@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.background {
+    background-image: url('../assets/logBack.png'); /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Increase darkness of the overlay */
+    position: absolute; /* Ensure the overlay covers the entire screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px; /* Add rounded edges */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* A slightly darker background for the login form */
+    width: 100%;
+    max-width: 400px;
+}
+
+p {
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: 'pitch', monospace;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    position: relative; /* Needed for absolute positioning of the icon */
+    text-align: center;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    font-family: 'pitch', monospace;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 10px 10px 10px 30px; /* Add padding to the left for the icon */
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 10px; /* Position the icon to the left */
+    top: 60%;
+    transform: translateX(200%);
+    color: #888; 
+}
+
+.checkbox-group {
+    font-family: 'pitch', monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 80%;
+    margin-left: 35px;
+}
+
+.checkbox-group a {
+    font-size: 12px;
+    color: lightblue;
+    text-decoration: none;
+}
+
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #631111;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: grab;
+    margin-bottom: 50px;
+}
+
+.login-btn:hover {
+    background-color: #0d0a35;
+}
+
+.sign{
+    font-size: 13px;
+    color: lightblue;
+    font-family: 'pitch', monospace;
+    text-decoration:overline;
+
+}
+
+/* .react-calendar {
+    max-width: 100%;
+    margin: auto;   
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar-tasks {
+    background: #f9c74f;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+  } */
+
+  .react-calendar {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  
