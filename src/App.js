@@ -7,20 +7,16 @@ import Login from "./Pages/Login.jsx";
 import NotFound from "./Pages/NotFound.jsx";
 import ErrorBoundary from "./ErrorBoundary";
 
-// Global error handler setup
+
 const setupGlobalErrorHandlers = () => {
-  // Catch uncaught runtime errors
   window.onerror = (message, source, lineno, colno, error) => {
     console.error("Caught global error:", message, error);
-    // Immediately redirect to not-found page
     window.location.replace("/not-found");
-    return true; // Prevent default browser error handling
+    return true; 
   };
 
-  // Catch unhandled promise rejections
   window.addEventListener("unhandledrejection", (event) => {
     console.error("Unhandled promise rejection:", event.reason);
-    // Immediately redirect to not-found page
     window.location.replace("/not-found");
   });
 };
@@ -28,24 +24,21 @@ const setupGlobalErrorHandlers = () => {
 const App = () => {
   const [user, setUser] = useState(null);
   const [userRole, setUserRole] = useState("user");
-  const [isErrorHandled, setIsErrorHandled] = useState(false); // Track error handling state
+  const [isErrorHandled, setIsErrorHandled] = useState(false);
 
   useEffect(() => {
-    setupGlobalErrorHandlers(); // Setup global error handlers
-
-    // Simulate loading time for app setup
+    setupGlobalErrorHandlers(); 
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       if (currentUser) {
         setUserRole(currentUser.email === "admin@example.com" ? "admin" : "user");
       }
-      setIsErrorHandled(true); // App is ready once Firebase auth is initialized
+      setIsErrorHandled(true); 
     });
 
-    return () => unsubscribe(); // Clean up on unmount
+    return () => unsubscribe(); 
   }, []);
 
-  // Prevent app from rendering until error handling is initialized
   if (!isErrorHandled) return null;
 
   return (
