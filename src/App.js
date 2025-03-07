@@ -31,7 +31,7 @@ const App = () => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       if (currentUser) {
-        setUserRole(currentUser.email === "admin@example.com" ? "admin" : "user");
+        setUserRole(currentUser.email === "admin@example.com" ? "admin" : "user"); //will implement this later
       }
       setIsErrorHandled(true); 
     });
