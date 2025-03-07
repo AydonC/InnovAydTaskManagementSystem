@@ -6,7 +6,7 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-    apiKey: import.meta.env.VITE_API_KEY,
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "innovaydtms.firebaseapp.com",
     projectId: "innovaydtms",
     storageBucket: "innovaydtms.firebasestorage.app",
